@@ -1,0 +1,15 @@
+service: cf-custom-resource-twilio
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+
+plugins:
+  - serverless-plugin-typescript
+
+functions:
+  account:
+    handler: src/index.deploy
+    environment:
+      TWILIO_ACCOUNT_SID: ${opt:accountSid}
+      TWILIO_AUTH_TOKEN: ${opt:authToken}

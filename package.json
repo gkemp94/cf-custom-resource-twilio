@@ -1,0 +1,22 @@
+{
+  "name": "cf-custom-resource-twilio",
+  "version": "1.0.0",
+  "description": "A Lambda Executed Custom Resource for Twilio Accounts",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Twilio"
+  ],
+  "author": "George Kemp",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "twilio": "^3.48.2"
+  },
+  "devDependencies": {
+    "serverless-plugin-typescript": "^1.1.9",
+    "typescript": "^3.9.7"
+  }
+}
